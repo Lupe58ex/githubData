@@ -2,7 +2,7 @@ import logging as log
 import requests
 
 GITHUB_BASE = "https://api.github.com/"
-GITHUB_TOKEN = "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" 
+GITHUB_TOKEN = "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" 
 
 def get_user_repos(per_page, page):
     url = GITHUB_BASE + f"user/repos?per_page{per_page}&page{page}"

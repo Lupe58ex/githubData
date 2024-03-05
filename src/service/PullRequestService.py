@@ -54,6 +54,8 @@ def get_pr_info(pr, name, fullname):
         pr["state"] = "MERGED"
 
     pr["name"] = name
+    pr["number"] = pull_request["number"]
+    pr["requested_reviewers"] = pull_request["requested_reviewers"]
 
     return pr
 
