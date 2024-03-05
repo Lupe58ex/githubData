@@ -103,6 +103,6 @@ def get_repos_json(fecha_inicio, fecha_fin):
     df_repos = pd.DataFrame(repos)
 
     df_prs_all.to_excel("output/pr.xlsx", index=False, columns=['name', 'title', 'number', 'origen', 'destino', 'state', "archivos", 'agregadas', 'eliminadas', 'created_at', 'closed_at', 'tiempo', 'user',
-                                                                'requested_reviewers', "involucrados", "approves", "comments"])
+                                                                'requested_reviewers', "involucrados", "approves", "comments", "archivos_mod_ext"])
     df_repos.to_excel("output/repo.xlsx", index=False,
                       columns=['name', 'size', 'language', 'created_at'])
